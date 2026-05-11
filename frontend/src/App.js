@@ -12,7 +12,10 @@ function App() {
     event: "",
   });
 
-  const API_URL = "/registrations";
+ const API_URL =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:4000/registrations"
+    : "/registrations";
 
 
   // Fetch Registrations
