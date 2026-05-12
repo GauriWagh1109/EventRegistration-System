@@ -14,7 +14,7 @@ function App() {
 
  const API_URL =
   process.env.NODE_ENV === "development"
-    ? "http://localhost:4000/registrations"
+    ? "http://20.244.14.63/registrations"
     : "/registrations";
 
 
