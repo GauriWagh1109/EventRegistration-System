@@ -11,11 +11,8 @@ function App() {
     college: "",
     event: "",
   });
-
- const API_URL =
-  process.env.NODE_ENV === "development"
-    ? "http://20.244.14.63/registrations"
-    : "/registrations";
+  
+const API_URL = "/registrations";
 
 
   // Fetch Registrations
